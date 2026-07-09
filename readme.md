@@ -14,3 +14,5 @@ The project has been refactored into a modular layout to isolate environment set
 ├── train_student.py       # Step 3: Sparse Offline Logit Distillation
 ├── evaluate.py            # Step 4: Hybrid Performance Evaluation Pipeline
 └── run_pipeline.py        # Master Orchestration Script
+
+# run_pipeline.py is the main driver file here.
