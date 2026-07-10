@@ -88,6 +88,14 @@ def run_evaluation():
     print("\n======================= FINAL HYBRID RESULTS =======================")
     for name, m in results_summary.items():
         print(f"{name:<25} | Acc: {m['strict_accuracy']:.2f}% | F1: {m['f1']:.4f}")
+    
+    os.makedirs(config.EVAL_RESULTS_DIR, exist_ok=True)  # Creates the directory automatically if missing
+    output_file_path = os.path.join(config.EVAL_RESULTS_DIR, "distillation_eval_results.json")
+    
+    with open(output_file_path, "w") as f:
+        json.dump({"metrics": results_summary, "predictions": model_predictions}, f, indent=4)
+        
+    print(f"\n Results logged safely to '{output_file_path}'")
 
 if __name__ == "__main__":
     run_evaluation()
