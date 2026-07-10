@@ -15,4 +15,11 @@ The project has been refactored into a modular layout to isolate environment set
 ├── evaluate.py            # Step 4: Hybrid Performance Evaluation Pipeline
 └── run_pipeline.py        # Master Orchestration Script
 
-# run_pipeline.py is the main driver file here.
+run_pipeline.py is the main driver file here.
+How to Run the Pipeline:
+  Install dependencies:
+    pip install -r requirements.txt
+  Execute the master orchestration script:
+    python run_pipeline.py
+  Expected Output:
+    The script will process the raw data and the distilled model will be saved in the directory "./qwen_1.5b_distilled_student"
