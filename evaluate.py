@@ -1,7 +1,6 @@
 import torch
 import json
-import re
-import os
+import re, os
 from datasets import load_from_disk, load_dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
