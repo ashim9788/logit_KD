@@ -31,4 +31,4 @@ STUDENT_EPOCHS = 3
 STUDENT_LR = 5e-5
 
 # Step 4 Parameters (Evaluation)
-MAX_NEW_TOKENS = 256
+MAX_NEW_TOKENS = 1024
