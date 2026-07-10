@@ -23,3 +23,4 @@ How to Run the Pipeline:
     python run_pipeline.py
   Expected Output:
     The script will process the raw data and the distilled model will be saved in the directory "./qwen_1.5b_distilled_student"
+    The evaluation results will be saved in the "./results" directory
