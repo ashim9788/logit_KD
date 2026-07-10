@@ -17,6 +17,7 @@ BASE_1_5B_ID = "Qwen/Qwen2.5-1.5B-Instruct"
 ADAPTER_DIR = "./qwen2.5_med_qlora_output"
 LOGITS_DATA_DIR = "./captured_logits_data"
 DISTILLED_STUDENT_DIR = "./qwen_1.5b_distilled_student"
+EVAL_RESULTS_DIR = "./results"
 
 # Step 1 & 2 Parameters (Teacher Training & Inference)
 TOP_K_LOGITS = 50
